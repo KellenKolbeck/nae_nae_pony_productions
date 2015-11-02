@@ -20,6 +20,7 @@
       <% end %>
     </div>
 
+
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
@@ -30,9 +31,11 @@
     <%= yield %>
   </div>
 
+  <hr>
+
   <div id="main_footer">
     <center><p><%= link_to "Home", static_index_path %></p></center>
   </div>
-  
+
 </body>
 </html>

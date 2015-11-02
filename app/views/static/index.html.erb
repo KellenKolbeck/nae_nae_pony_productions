@@ -1,24 +1,18 @@
-<div class="jumbotron">
-
-  <div id="main_page_title">
-    <center><h1><%= link_to "Nae Nae Pony Productions", 'static#index' %></h1></center>
-  </div>
-
-  <div id="main_page_logo">
-    <%= image_tag("logo_outline_done.png") %>
-  </div>
-
+<div id="main_page_logo">
+  <%= image_tag("logo_outline_done.png") %>
 </div>
 
-
 <div id="news_feed_header">
-  <h2>Recent news from NNPP:</h2>
-    <ul>
-      <% @posts.each do |post| %>
-        <li>
-          <span class="post_title"><%= post.post_title %></span>
-          <span class="post_body"><%= post.post_body %></span>
-        </li>
-      <% end %>
-    </ul>
+  <h2>Fresh from NNPP:</h2>
+</div>
+<div id="news_feed_content">
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <span class="post_title"><h3><%= post.post_title %></h3></span><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p>
+        <br>
+        <span class="post_body"><p><%= post.post_body %></p></span>
+      </li>
+    <% end %>
+  </ul>
 </div>
