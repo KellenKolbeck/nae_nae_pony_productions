@@ -1,10 +1,10 @@
 <div id= "post-header">
-  <span id="post-head"><%=@post.title %> </span>| <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Delete', post_path(@post), :data => {:confirm => "Are you sure?", :method => "delete"}%>
+  <span id="post-head"><%=@post.post_title %> </span>| <%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Delete', post_path(@post), :data => {:confirm => "Are you sure?", :method => "delete"}%>
 </div>
 
 <br>
 <br>
-<%= @post.body %>
+<%= @post.post_body %>
 
 <br>
 <br>
@@ -16,6 +16,5 @@
     | <%= link_to 'Delete', post_comment_path(@post, comment), :data => {:confirm => "Are you sure?", :method => "delete"}%></li>
   <% end %>
 </ul>
-<h4>Add a comment to this post: <%= link_to "Add comment", new_post_comment_path(@post) %></h4>
-<br>
-<br>
+<br><br>
+<h4><%= link_to "Add comment", new_post_comment_path(@post) %></h4>

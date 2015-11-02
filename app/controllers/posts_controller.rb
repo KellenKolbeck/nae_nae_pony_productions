@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     def create
       @post = Post.new(post_params)
       if @post.save
-        redirect_to posts_path
+        redirect_to static_index_path
       else
         render :new
       end
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
     def update
       @post = Post.find(params[:id])
       if @post.update(post_params)
-        redirect_to post_path(@post)
+        redirect_to static_index_path(@post)
       else
         render :edit
       end
@@ -38,14 +38,14 @@ class PostsController < ApplicationController
     def destroy
       @post = Post.find(params[:id])
       @post.destroy
-      redirect_to posts_path
+      redirect_to static_index_path
     end
 
 
 
   private
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:post_title, :post_body)
   end
 
 
