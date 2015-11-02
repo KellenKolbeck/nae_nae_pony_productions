@@ -1,5 +1,24 @@
-<center><h1>Nae Nae Pony Productions</h1></center>
+<div class="jumbotron">
 
-<div id="static_page_logo">
-  <%= image_tag("logo_outline_done.png") %>
+  <div id="main_page_title">
+    <center><h1><%= link_to "Nae Nae Pony Productions", 'static#index' %></h1></center>
+  </div>
+
+  <div id="main_page_logo">
+    <%= image_tag("logo_outline_done.png") %>
+  </div>
+
+</div>
+
+
+<div id="news_feed_header">
+  <h2>Recent news from NNPP:</h2>
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <span class="post_title"><%= post.post_title %></span>
+          <span class="post_body"><%= post.post_body %></span>
+        </li>
+      <% end %>
+    </ul>
 </div>

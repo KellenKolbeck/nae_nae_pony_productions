@@ -10,8 +10,22 @@ body {
   color: #fff;
 }
 
-#static_page_logo {
+#splash_page_logo {
   text-align: center;
+  min-width: 300px;
+  margin-right: 4%;
+}
+
+#splash_page_title h1{
+  font-size: 5em;
+}
+
+#splash_page_container {
+  margin: 0 auto;
+}
+
+#splash_page_title {
+  margin-top: 15%;
 }
 
 #user_nav {
@@ -38,4 +52,5 @@ a {
 a:hover {
   color:salmon;
   cursor: pointer;
+  text-decoration: none;
 }
