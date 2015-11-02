@@ -1,0 +1,41 @@
+html, body {
+  height: 95%;
+}
+
+body {
+  background: url("dark_wood.jpg") no-repeat 50% 50% fixed;
+  background-size: cover;
+  font-family: 'Poiret One', cursive;
+  background-color: #000;
+  color: #fff;
+}
+
+#static_page_logo {
+  text-align: center;
+}
+
+#user_nav {
+  padding-top: 1em;
+}
+
+#footer {
+  margin-bottom: -2em;
+}
+
+.container {
+  min-height: 100%;
+}
+
+input {
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color:salmon;
+  cursor: pointer;
+}
