@@ -259,4 +259,5 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
+  config.omniauth :soundcloud, "09dea8bd7c5b8f60dc7356a7755d9279", "a67d8347e7759d3b60ff8345557a8e1e"
 end
