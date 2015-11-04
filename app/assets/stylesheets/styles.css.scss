@@ -6,6 +6,11 @@ body {
   color: #fff;
 }
 
+.container {
+  min-height: 100%;
+  min-width: 100%;
+}
+
 #splash_page_logo {
   text-align: center;
   min-width: 300px;
@@ -37,13 +42,9 @@ body {
   margin: 0;
 }
 
-#news_feed_content {
-  width: 40%;
-  margin: 0 auto;
-}
-
 #news_feed_content li {
   list-style: none;
+  max-width: 90%;
 }
 
 #small_app_title {
@@ -55,13 +56,14 @@ body {
   margin-top: 1em;
 }
 
-#footer {
-  margin-bottom: -2em;
+#home_footer_logo {
+  text-align: center;
 }
 
-.container {
-  min-height: 100%;
+#home_footer_logo img {
+  max-height: 100px;
 }
+
 
 input {
   color: black;

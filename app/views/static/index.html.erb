@@ -1,33 +1,39 @@
-<div id="main_page_logo">
-  <%= image_tag("logo_outline_done.png") %>
-</div>
-
+<div class="col-xs-3">
   <%= link_to "Sign into Soundcloud", user_omniauth_authorize_path(:soundcloud) %>
- <p><%= link_to "Add a post", new_post_path, id: "new_post_button", remote: true %></p>
-
-<div id="news_feed_header">
-  <h2>Fresh from NNPP:</h2>
-  <br>
+  <p><%= link_to "Add a post", new_post_path, id: "new_post_button", remote: true %></p>
 </div>
-<div id="news_feed_content">
-  <ul>
-    <% @posts.each do |post| %>
-      <li>
-        <span class="post_title"><h2><%= link_to post.post_title, post_path(post) %></h2></span><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p>
-        <br>
-        <span class="post_body"><p><%= post.post_body %></p></span>
-        <br>
-        <%= link_to "Add comment", new_post_comment_path(post), id: "new_post_comment_button" %>
+
+
+<div class="col-xs-6">
+  <div id="news_feed_header">
+    <h2>Fresh from NNPP:</h2>
+    <br>
+  </div>
+  <div id="news_feed_content">
+    <ul>
+      <% @posts.each do |post| %>
+        <li>
+          <span class="post_title"><h2><%= link_to post.post_title, post_path(post) %></h2></span><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p>
+          <br>
+          <span class="post_body"><p><%= post.post_body %></p></span>
+          <br>
+          <%= link_to "Add comment", new_post_comment_path(post), id: "new_post_comment_button" %>
+          <br><br>
+          <ul>
+            <% post.comments.order(created_at: :desc).each do |comment| %>
+              <li><%= comment.comment_body %> - posted <%= time_ago_in_words(comment.created_at) %> ago
+              | <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
+              | <%= link_to 'Delete', post_comment_path(post, comment), :data => {:confirm => "Are you sure?", :method => "delete"}%></li>
+            <% end %>
+          </ul>
+        </li>
         <br><br>
-        <ul>
-          <% post.comments.order(created_at: :desc).each do |comment| %>
-            <li><%= comment.comment_body %> - posted <%= time_ago_in_words(comment.created_at) %> ago
-            | <%= link_to 'Edit', edit_post_comment_path(post, comment) %>
-            | <%= link_to 'Delete', post_comment_path(post, comment), :data => {:confirm => "Are you sure?", :method => "delete"}%></li>
-          <% end %>
-        </ul>
-      </li>
-      <br><br>
-    <% end %>
-  </ul>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+<div class="col-xs-3">
+  <iframe width="80%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/142032501&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 </div>
