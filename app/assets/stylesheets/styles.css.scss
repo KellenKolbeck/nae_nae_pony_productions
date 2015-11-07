@@ -52,15 +52,16 @@ body {
   margin: 0;
 }
 
+#navigation_bar {
+  padding: 0;
+}
+
 #user_nav {
-  margin-top: 1em;
+  padding-top: 2em;
 }
 
-#home_footer_logo {
-  text-align: center;
-}
 
-#home_footer_logo img {
+a img {
   max-height: 100px;
 }
 
