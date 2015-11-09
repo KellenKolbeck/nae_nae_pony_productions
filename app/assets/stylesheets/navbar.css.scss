@@ -1,5 +1,10 @@
 .container-fluid {
+  background-color: #42403F;
+}
 
+.navbar {
+  border:none;
+  box-shadow:none;
 }
 
 #navigation_bar body {
@@ -18,7 +23,7 @@
 
 #user_nav {
   padding-top: 1.15em;
-  color: black;
+  color: #fff;
 }
 
 #static_links {
@@ -37,11 +42,15 @@ a.dropdown-toggle {
 }
 
 #navigation_bar a {
-  color: black;
+  color: white;
 }
 
 #navigation_bar a:hover {
   color:salmon;
   cursor: pointer;
   text-decoration: none;
+}
+
+ul.dropdown-menu {
+  background-color: #42403F;
 }
