@@ -1,8 +1,22 @@
-#about_container {
-  max-width: 60%;
+#about_photo {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#about_photo img {
+  width: 30%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 25%;
+  border: 2px ridge white;
+  border-radius:10%;
+}
+
+#about_container {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+
 }
 
 #about_container p {
