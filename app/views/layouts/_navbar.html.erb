@@ -9,11 +9,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar_logo">
-          <%= link_to image_tag("logo_outline_done.png"), posts_path %>
-        </a>
+        <div id="navbar_logo"
+          <a class="navbar_logo">
+            <%= link_to image_tag("logo_outline_done.png"), posts_path %>
+          </a>
+        </div>
       </div>
-      <div id="user_nav">
+      <div id="user_nav" class= "nav navbar-nav navbar-left">
         <% if user_signed_in? %>
           Logged in as <strong><%= current_user.email %></strong>.
           <%= link_to 'Edit profile', edit_user_registration_path %> |
@@ -33,14 +35,14 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <%= link_to "About Us", page_path('about') %>
-          <%= link_to "Contact Us", page_path('contact') %>
+          <li><%= link_to "About", page_path('about') %></li>
+          <li><%= link_to "Contact", page_path('contact') %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Music <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Our Music</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Our Friend's Music</a></li>
+              <li><a href="#">Buy Music</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Find New Music</a></li>
             </ul>

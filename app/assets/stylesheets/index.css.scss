@@ -11,31 +11,6 @@ body {
   min-width: 100%;
 }
 
-#splash_page_logo {
-  text-align: center;
-  min-width: 300px;
-  margin-right: 4%;
-}
-
-#splash_page_title h1{
-  font-size: 5em;
-}
-
-#splash_page_container {
-  margin: 0 auto;
-}
-
-#splash_page_title {
-  margin-top: 15%;
-}
-
-#main_page_logo img {
-  float: right;
-  max-width: 15%;
-  margin-top: -8em;
-  margin-right: -4.5em;
-}
-
 #news_feed_header {
   text-align: center;
   text-decoration: underline;
@@ -46,25 +21,6 @@ body {
   list-style: none;
   max-width: 90%;
 }
-
-#small_app_title {
-  float: right;
-  margin: 0;
-}
-
-#navigation_bar {
-  padding: 0;
-}
-
-#user_nav {
-  padding-top: 2em;
-}
-
-
-a img {
-  max-height: 100px;
-}
-
 
 input {
   color: black;
