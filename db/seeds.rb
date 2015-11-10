@@ -8,9 +8,11 @@
 
 
 Post.create(post_title: "New website up!", post_body: "Hey guys! We're just getting the site up and running so you might run into some issues as you poke around. Have no fear, those will all be fixed soon. I'll have some of my music on here soon so that everyone get a listen to various tracks by Smooth Jimmy, Beat Red, Toofpick Slim, and others. Enjoy!")
+
 Album.create(name: "Supper Time", price: "1000", contributors: "Smooth Jimmy, Beat Red", year_released: "2012")
 Album.create(name: "God", price: "1000", contributors: "Smooth Jimmy, Dawsyclops, Jason Spars, and Boss Miller", year_released: "2013")
 Album.create(name: "Something in Nothing", price: "1000", contributors: "Smooth Jimmy, Boss Miller, FreeWryte, Dino Babic, Jason Spars, Dawscyclops, and Suzie Richards", year_released: "2014")
+
 Song.create(title: "Interluder", featuring: "", length: "03:20", album_id: 1, price: 100)
 Song.create(title: "Blowing", featuring: "", length: "02:38", album_id: 1, price: 100)
 Song.create(title: "Visions", featuring: "", length: "03:21", album_id: 1, price: 100)
@@ -26,3 +28,25 @@ Song.create(title: "Flip Out", featuring: "", length: "02:48", album_id: 1, pric
 Song.create(title: "Circles", featuring: "", length: "02:31", album_id: 1, price: 100)
 Song.create(title: "The Truth", featuring: "", length: "03:59", album_id: 1, price: 100)
 Song.create(title: "Lost em'", featuring: "", length: "01:31", album_id: 1, price: 100)
+
+Song.create(title: "Don't Leave Reality", featuring: "", length: "02:42", album_id: 2, price: 100)
+Song.create(title: "Little Vandals", featuring: "Dawsyclops", length: "03:05", album_id: 2, price: 100)
+Song.create(title: "The Unlimited", featuring: "Boss Miller", length: "03:23", album_id: 2, price: 100)
+Song.create(title: "You Can", featuring: "", length: "03:22", album_id: 2, price: 100)
+Song.create(title: "Growth in Mind", featuring: "Jason Spars", length: "02:39", album_id: 2, price: 100)
+Song.create(title: "Make 'em Cry'", featuring: "", length: "03:24", album_id: 2, price: 100)
+Song.create(title: "Miles Davis", featuring: "", length: "06:13", album_id: 2, price: 100)
+Song.create(title: "Donuts", featuring: "", length: "03:05", album_id: 2, price: 100)
+Song.create(title: "Lady Karma", featuring: "Boss Miller", length: "03:09", album_id: 2, price: 100)
+
+
+Song.create(title: "Brink Of All", featuring: "", length: "04:49", album_id: 3, price: 100)
+Song.create(title: "Soulmate", featuring: "Boss Miller & FreeWryte", length: "03:05", album_id: 3, price: 100)
+Song.create(title: "Got A While", featuring: "Boss Miller & Dino Babic", length: "03:01", album_id: 3, price: 100)
+Song.create(title: "Misfits", featuring: "Jason Spars", length: "03:27", album_id: 3, price: 100)
+Song.create(title: "Keep It Movin'", featuring: "Boss Miller", length: "03:45", album_id: 3, price: 100)
+Song.create(title: "Rolodex My Villains", featuring: "Dawscyclops & Boss Miller", length: "02:58", album_id: 3, price: 100)
+Song.create(title: "Darkness", featuring: "", length: "03:25", album_id: 3, price: 100)
+Song.create(title: "Broken Wings", featuring: "Jason Spars", length: "04:52", album_id: 3, price: 100)
+Song.create(title: "Up All Night", featuring: "Boss Miller & Suzie Richards", length: "03:27", album_id: 3, price: 100)
+Song.create(title: "Ray", featuring: "Boss Miller", length: "01:55", album_id: 3, price: 100)
