@@ -5,12 +5,20 @@
 #splash_page_container {
   margin: 0 auto;
   min-height: 100%;
-}
+  min-width: 100%;
+  padding-top: 15%;
 
-#splash_page_title {
-  margin-top: 20%;
 }
 
 #splash_page_logo {
   text-align: center;
+
+}
+
+#splash_page_logo a {
+  margin: 0 auto;
+}
+
+#splash_page_logo img {
+  margin: 0 auto;
 }

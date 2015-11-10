@@ -1,23 +1,35 @@
-<h1>Albums produced by Nae Nae Pony Productions:</h1>
+<div id="albums_title">
+  <h1>Albums produced by Nae Nae Pony Productions:</h1>
+</div>
+<br><br>
 
-<ul>
-  <% @albums.each do |album| %>
-    <li><%= album.name %></li>
-    <li>by: <%= album.contributors %></li>
-    <li>released in: <%= album.year_released %></li>
-    <li class="buy_album">purchase for only: $ <%= album.price / 100 %>.00 |
-        <div id="buy_album"><%= link_to "Buy Now", new_album_charge_path(album), remote: true %></div>
-    </li>
-    <li>Song list:
-      <ul>
-        <% album.songs.each do |song| %>
-          <li><%= song.title %></li>
-        <% end %>
-      </ul>
-    </li>
-  <br><br>
-  <% end %>
-</ul>
+<div class="col-xs-12">
+
+  <ul>
+    <div class="col-xs-6" id="album_left_column">
+      <% @albums.each do |album| %>
+        <li><h2><b><%= album.name %></b></h2><h5>released in: <%= album.year_released %></h5></li>
+        <li><h4>by: <%= album.contributors %></h4></li>
+        <li><h3><%= button_to "Buy Now", new_album_charge_path(album), id:'buy_album', class: 'btn btn-warning', method: :get, remote: true %></h3></li>
+        <br>
+        <li><h2>Song list:</h2>
+          <ol>
+            <% album.songs.each do |song| %>
+              <li><h4 class='song_title'><%= song.title %> - <small><%= song.length %></small></h4></li>
+            <% end %>
+          </ol>
+        </li>
+    </div>
+    <div class="col-xs-6" id="album_right_column">
+      <div id="album_cover">
+        <%= image_tag('god.jpg') %>
+      </div>
+    </div>
+    <br><br>
+    <% end %>
+  </ul>
+</div>
+
 
 
 

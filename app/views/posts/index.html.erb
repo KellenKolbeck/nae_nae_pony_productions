@@ -18,7 +18,7 @@
         <li>
           <span class="post_title"><h2><%= link_to post.post_title, post_path(post) %></h2></span><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p>
           <br>
-          <span class="post_body"><p><%= post.post_body %></p></span>
+          <span class="post_body"><h4><%= truncate(post.post_body, length: 200, separator: ' ') %></h4></span>
           <br>
         </li>
         <br><br>
