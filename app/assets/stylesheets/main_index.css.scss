@@ -36,3 +36,17 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+
+#main_index_photo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#main_index_photo img {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius:50%;
+}
