@@ -13,6 +13,7 @@ gem 'devise'
 gem 'omniauth-soundcloud', '~> 1.0.0'
 gem 'soundcloud'
 gem 'high_voltage'
+gem 'stripe'
 
 group :development do
   gem 'byebug'

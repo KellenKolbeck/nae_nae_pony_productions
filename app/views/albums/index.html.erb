@@ -5,8 +5,16 @@
     <li><%= album.name %></li>
     <li>by: <%= album.contributors %></li>
     <li>released in: <%= album.year_released %></li>
-    <li>purchase for only: <%= album.price %></li>
-    <li>Song list: <%= album.songs %></li>
+    <li class="buy_album">purchase for only: $ <%= album.price / 100 %>.00 |
+        <div id="buy_album"><%= link_to "Buy Now", new_album_charge_path(album), remote: true %></div>
+    </li>
+    <li>Song list:
+      <ul>
+        <% album.songs.each do |song| %>
+          <li><%= song.title %></li>
+        <% end %>
+      </ul>
+    </li>
   <br><br>
   <% end %>
 </ul>

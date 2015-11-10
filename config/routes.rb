@@ -9,4 +9,12 @@ Rails.application.routes.draw do
   resources :albums do
     resources :songs
   end
+
+  resources :albums do
+    resources :charges
+  end
+
+  # resources :songs do
+  #   resources :charges
+  # end
 end
