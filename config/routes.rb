@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :albums
-
+  resources :albums do
+    resources :songs
+  end
 end
