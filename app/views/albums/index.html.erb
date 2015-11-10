@@ -1,8 +1,15 @@
 <h1>Albums produced by Nae Nae Pony Productions:</h1>
 
-<% @albums.each do |album| %>
-  <%= album.name %>
-<% end %>
+<ul>
+  <% @albums.each do |album| %>
+    <li><%= album.name %></li>
+    <li>by: <%= album.contributors %></li>
+    <li>released in: <%= album.year_released %></li>
+    <li>purchase for only: <%= album.price %></li>
+    <li>Song list: <%= album.songs %></li>
+  <br><br>
+  <% end %>
+</ul>
 
 
 

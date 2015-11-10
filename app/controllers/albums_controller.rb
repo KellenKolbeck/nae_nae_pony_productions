@@ -46,7 +46,7 @@ def index
 
   private
   def album_params
-    params.require(:album).permit(:name, :contributors, :year_released, :songs)
+    params.require(:album).permit(:name, :contributors, :year_released, :songs, :price)
   end
 
 end
