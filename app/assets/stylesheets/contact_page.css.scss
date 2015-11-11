@@ -6,11 +6,31 @@
 
 
 #contact_photo img {
-  width: 30%;
+  width: 25%;
   text-align: center;
   margin: 0 auto;
   border: 2px solid white;
   border-radius:50%;
+}
+
+.contact_field {
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.contact_field label {
+  padding: 1em;
+}
+
+.contact_field input {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.contact_field textarea {
+  color: black;
+  width: 20%;
 }
 
 .hidden { display: none; }
