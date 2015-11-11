@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     resources :charges
   end
 
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
   # resources :songs do
   #   resources :charges
   # end

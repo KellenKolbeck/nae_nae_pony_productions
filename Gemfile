@@ -14,6 +14,7 @@ gem 'omniauth-soundcloud', '~> 1.0.0'
 gem 'soundcloud'
 gem 'high_voltage'
 gem 'stripe'
+gem 'mail_form'
 
 group :development do
   gem 'byebug'
