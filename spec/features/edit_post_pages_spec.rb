@@ -1,14 +1,16 @@
 require 'rails_helper'
 
-describe "the add a post process" do
-  it "adds a post to the website" do
+describe "the edit a post process" do
+  it "edits a post on the app" do
     login_user
+    post = FactoryGirl.create(:post)
     visit posts_path
-    click_on "Add a post"
-    fill_in "Post title", with: "Kellen"
+    click_on post.post_title
+    click_on "Edit"
+    fill_in "Post title", with: "Kellen!"
     fill_in "Post body", with: "Hello"
-    click_button "Create Post"
-    expect(page).to have_content "Kellen"
+    click_button "Update Post"
+    expect(page).to have_content "Kellen!"
   end
   def login_user
     visit posts_path
