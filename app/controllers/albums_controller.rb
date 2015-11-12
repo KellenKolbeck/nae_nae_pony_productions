@@ -42,11 +42,8 @@ def index
     redirect_to albums_path
   end
 
-
-
   private
   def album_params
     params.require(:album).permit(:name, :contributors, :year_released, :price)
   end
-
 end

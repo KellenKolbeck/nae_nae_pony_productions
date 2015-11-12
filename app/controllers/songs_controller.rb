@@ -39,6 +39,7 @@ def destroy
   redirect_to album_path(@album)
 end
 
+
 private
   def song_params
     params.require(:song).permit(:title, :featuring, :length)

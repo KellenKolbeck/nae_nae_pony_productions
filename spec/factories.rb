@@ -10,4 +10,11 @@ FactoryGirl.define do
     post
   end
 
+  factory(:album) do
+    name('Supper Time')
+    contributors('Boss Miller')
+    year_released('2012')
+    price(1000)
+  end
+
 end
