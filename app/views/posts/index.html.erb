@@ -28,5 +28,6 @@
 </div>
 
 
-
-<%= link_to "Add a post", new_post_path, id: "new_post_button", remote: true %>
+<% if current_user && current_user.admin? %>
+  <%= link_to "Add a post", new_post_path, id: "new_post_button", remote: true %>
+<% end %>
