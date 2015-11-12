@@ -6,7 +6,7 @@ describe "the edit a post process" do
     post = FactoryGirl.create(:post)
     visit posts_path
     click_on post.post_title
-    click_on "Edit"
+    click_on "Edit Post"
     fill_in "Post title", with: "Kellen!"
     fill_in "Post body", with: "Hello"
     click_button "Update Post"

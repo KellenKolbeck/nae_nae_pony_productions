@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-describe "the edit a post process" do
-  it "edits a post on the app" do
+describe "the edit comment process" do
+  it "will edit a comment to a post" do
     login_user
-    post = FactoryGirl.create(:post)
+    comment = FactoryGirl.create(:comment)
     visit posts_path
-    click_on post.post_title
-    click_on "Delete Post"
-    expect(page).to have_no_content "Kellen"
+    click_on comment.post.post_title
+    click_link "Delete"
+    expect(page).to have_no_content "Hello there!"
   end
   def login_user
     visit posts_path
