@@ -17,4 +17,12 @@ FactoryGirl.define do
     price(1000)
   end
 
+  factory(:song) do
+    title('Miles Davis')
+    featuring('Jason Spars')
+    price(100)
+    length('04:55')
+    album
+  end
+
 end
