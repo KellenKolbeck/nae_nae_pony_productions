@@ -1,10 +1,11 @@
 require 'rails_helper'
 
-describe "the edit a post process" do
-  it "edits a post to the website" do
+describe "the delete an album process" do
+  it "deletes an album to the website" do
     login_user
     album = FactoryGirl.create(:album)
     visit albums_path
+    click_on album.name
     click_on "Delete Album"
     expect(page).to have_no_content "Supper Time"
   end

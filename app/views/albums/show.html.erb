@@ -1,6 +1,7 @@
 <div class="col-xs-6" id="album_left_column">
   <h1><%= @album.name %></h1>
   <h4>by: <%= @album.contributors %></h4>
+  <%= link_to 'Edit Album', edit_album_path(@album) %> | <%= link_to 'Delete Album', album_path(@album), :data => {:confirm => "Are you sure?", :method => "delete"}%>
 
   <h2>Song list:</h2>
     <ol>

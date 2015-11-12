@@ -5,6 +5,7 @@ describe "the edit a post process" do
     login_user
     album = FactoryGirl.create(:album)
     visit albums_path
+    click_on album.name
     click_on "Edit Album"
     fill_in "Name", with: "Supper Time!"
     click_on "Update Album"
