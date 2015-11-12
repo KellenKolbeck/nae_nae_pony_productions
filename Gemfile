@@ -15,6 +15,7 @@ gem 'soundcloud'
 gem 'high_voltage'
 gem 'stripe'
 gem 'mail_form'
+gem 'paperclip'
 
 group :development do
   gem 'byebug'
