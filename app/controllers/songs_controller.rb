@@ -16,28 +16,28 @@ def create
     render :new
   end
 end
-# 
-# def edit
-#   @album = Album.find(params[:album_id])
-#   @song = Song.find(params[:id])
-# end
-#
-# def update
-#   @album = Album.find(params[:album_id])
-#   @song = Song.find(params[:id])
-#   if @song.update(song_params)
-#     redirect_to album_path(@album)
-#   else
-#     render :edit
-#   end
-# end
-#
-# def destroy
-#   @album = Album.find(params[:album_id])
-#   @song = Song.find(params[:id])
-#   @song.destroy
-#   redirect_to album_path(@album)
-# end
+
+def edit
+  @album = Album.find(params[:album_id])
+  @song = Song.find(params[:id])
+end
+
+def update
+  @album = Album.find(params[:album_id])
+  @song = Song.find(params[:id])
+  if @song.update(song_params)
+    redirect_to album_path(@album)
+  else
+    render :edit
+  end
+end
+
+def destroy
+  @album = Album.find(params[:album_id])
+  @song = Song.find(params[:id])
+  @song.destroy
+  redirect_to album_path(@album)
+end
 
 
 private

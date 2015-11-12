@@ -1,0 +1,13 @@
+<%= render "layouts/errors", :object => @song %>
+
+<%= form_for @song do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :featuring %>
+<%= f.text_field :featuring %>
+<%= f.label :length %>
+<%= f.text_field :length %>
+<%= f.label :price %>
+<%= f.text_field :price %>
+<%= f.submit %>
+<% end %>
