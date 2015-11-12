@@ -1,6 +1,6 @@
 <div class="container">
   <div id= "post-header">
-    <span id="post-head"><h1><%=@post.post_title %></h1> </span>| <%= link_to 'Edit Post', edit_post_path(@post) %> | <%= link_to 'Delete Post', post_path(@post), :data => {:confirm => "Are you sure?", :method => "delete"}%>
+    <span id="post-head"><h1><%=@post.post_title %></h1> </span> <%= link_to 'Edit Post', edit_post_path(@post) %> | <%= link_to 'Delete Post', post_path(@post), :data => {:confirm => "Are you sure?", :method => "delete"}%>
   </div>
 
   <br>
