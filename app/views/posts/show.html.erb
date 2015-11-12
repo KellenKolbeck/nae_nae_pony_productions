@@ -23,6 +23,6 @@
       <% end %>
     </ul>
     <br><br>
-    <h4><%= link_to "Add comment", new_post_comment_path(@post) %></h4>
+    <h4><%= link_to "Add comment", new_post_comment_path(@post), id:"new_post_comment_button", remote: true %></h4>
   </div>
 </div>
