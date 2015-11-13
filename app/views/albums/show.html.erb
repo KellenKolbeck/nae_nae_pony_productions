@@ -1,4 +1,4 @@
-<div class="col-xs-6" id="album_left_column">
+<div class="col-xs-12" id="album_show_page">
   <h1><%= @album.name %></h1>
   <h4>by: <%= @album.contributors %></h4>
   <% if current_user && current_user.admin? %>
@@ -18,9 +18,7 @@
         <% end %>
       <% end %>
     </ol>
+    <br>
   <h3><%= button_to "Buy Now", new_album_charge_path(@album), id:"buy_album#{@album.id}", class: 'btn btn-warning', method: :get, remote: true %></h3>
   <%= render 'charges/new', album: @album %>
-</div>
-
-<div class="col-xs-6" id="album_right_column">
 </div>
