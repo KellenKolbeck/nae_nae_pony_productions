@@ -18,6 +18,10 @@ body {
   margin: 0;
 }
 
+#news_feed_header h2 {
+  font-size: 3em;
+}
+
 #news_feed_content li {
   list-style: none;
   max-width: 90%;
@@ -49,7 +53,7 @@ a:hover {
 
 
 #main_index_photo img {
-  width: 30%;
+  width: 40%;
   text-align: center;
   margin: 0 auto;
   border: 2px solid white;
