@@ -19,21 +19,24 @@
   font-size: 1em;
 }
 
+
 .contact_field label {
-  padding: 1em;
+  padding: .5em;
+  width: 100px;
+  text-align: center;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
 }
 
-.contact_field input {
-  margin: 0 auto;
-  width: 20%;
+.contact_field input textarea button{
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
 }
 
-.contact_field textarea {
-  color: black;
-  width: 20%;
-}
-
-.hidden { display: none; }
 
 /*flash*/
 
