@@ -10,7 +10,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem "factory_girl_rails", "~> 4.0"
 gem 'devise'
-gem 'omniauth-soundcloud', '~> 1.0.0'
 gem 'soundcloud'
 gem 'high_voltage'
 gem 'stripe'
