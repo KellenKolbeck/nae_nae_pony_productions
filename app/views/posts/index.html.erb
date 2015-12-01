@@ -9,14 +9,14 @@
 
 <div class="col-xs-6">
   <div id="news_feed_header">
-    <h2>Fresh from NNPP:</h2>
-    <br>
+    <h2>Fresh from Nae Nae Pony Productions:</h2>
+    <br><br>
   </div>
   <div id="news_feed_content">
     <ul>
-      <% @posts.each do |post| %>
-        <li>
-          <span class="post_title"><h2><%= link_to post.post_title, post_path(post) %></h2></span><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p>
+      <% @posts.order(created_at: :desc).each do |post| %>
+        <li class="news_feed_story">
+          <span class="post_title"><h2><%= link_to post.post_title, post_path(post) %></h2></span><span class="post_time"><p> - posted <%= time_ago_in_words(post.created_at) %> ago</p></span>
           <br>
           <span class="post_body"><h4><%= truncate(post.post_body, length: 200, separator: ' ') %></h4></span>
           <br>

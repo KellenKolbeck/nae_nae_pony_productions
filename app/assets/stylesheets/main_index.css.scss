@@ -14,7 +14,7 @@ body {
 
 #news_feed_header {
   text-align: center;
-  text-decoration: underline;
+  // text-decoration: underline;
   margin: 0;
 }
 
@@ -25,6 +25,10 @@ body {
 #news_feed_content li {
   list-style: none;
   max-width: 90%;
+  border: 1px solid #ffeb7f;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, .4);
+
 }
 
 input {
@@ -58,4 +62,12 @@ a:hover {
   margin: 0 auto;
   border: 2px solid white;
   border-radius:50%;
+}
+
+.post_title {
+  text-align: center;
+}
+
+.post_time {
+  text-align: center;
 }
