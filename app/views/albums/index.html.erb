@@ -10,7 +10,7 @@
       <% @albums.each do |album| %>
         <li><h2><b><%= link_to album.name, album_path(album) %></b></h2><h5>released in: <%= album.year_released %></h5></li>
         <li><h4>by: <%= album.contributors %></h4></li>
-        <li><h3><%= button_to "Buy Now", new_album_charge_path(album), id:"buy_album#{album.id}", class: 'btn btn-warning', method: :get, remote: true %></h3></li>
+        <li><h3><%= button_to "Buy Now", new_album_charge_path(album), id:"buy_album#{album.id}", class: 'btn btn-warning btn-large', method: :get, remote: true %></h3></li>
         <%= render 'charges/new', album: album %>
         <br><br><br><br><br><br><br><br>
       <% end %>

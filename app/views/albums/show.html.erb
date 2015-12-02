@@ -19,6 +19,6 @@
       <% end %>
     </ol>
     <br>
-  <h3><%= button_to "Buy Now", new_album_charge_path(@album), id:"buy_album#{@album.id}", class: 'btn btn-warning', method: :get, remote: true %></h3>
+  <h3><%= button_to "Buy Now", new_album_charge_path(@album), id:"buy_album#{@album.id}", class: 'btn btn-warning btn-large', method: :get, remote: true %></h3>
   <%= render 'charges/new', album: @album %>
 </div>

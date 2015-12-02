@@ -5,7 +5,7 @@
   <%= f.label :comment_body %>
   <%= f.text_area :comment_body %>
   <%= f.hidden_field :user_id, value: current_user.id %>
-  <%= f.submit %>
+  <%= f.submit, class: 'btn btn-warning btn-large' %>
   <% end %>
 <% else %>
   <h3>You must login to comment!</h3>
