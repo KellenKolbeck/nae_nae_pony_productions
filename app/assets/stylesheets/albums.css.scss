@@ -68,7 +68,13 @@ h4.song_title {
 }
 
 #album_show_page {
+  border: 1px solid #ffeb7f;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 0 auto;
+  width: 50%;
   text-align: center;
+  padding: 1em;
+  margin-top: 10%;
 }
 
 ol {
