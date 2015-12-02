@@ -6,17 +6,26 @@
 
 
 #contact_photo img {
-  width: 25%;
+  width: 45%;
   text-align: center;
   margin: 0 auto;
   border: 2px solid white;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .contact_field {
   padding: 1em;
   text-align: center;
   font-size: 1em;
+}
+
+#contact_form {
+  border: 1px solid #ffeb7f;
+  background-color: rgba(0, 0, 0, .4);
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em 1em;
 }
 
 
